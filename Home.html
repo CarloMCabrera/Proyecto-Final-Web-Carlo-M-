@@ -2,15 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carlo Manuel | Portafolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-MxfYzLf3pN8V+Hx/EqUeYl4..."
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Tu hoja de estilos -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- JavaScript (cargado al final con defer) -->
+  <script defer src="index.js"></script>
 </head>
+
 <body>
   <header>
     <h1>Carlo Manuel Cabrera</h1>
     <p>Desarrollador Web Full Stack</p>
-    
+
     <nav>
       <a href="#about">Sobre mí</a>
       <a href="#projects">Proyectos</a>
@@ -18,36 +30,45 @@
     </nav>
   </header>
 
-  <section id="about">
-    <img src="imagen/CarloM.jpeg" alt="imagen de Carlo Manuel Cabrera" class="profile-image" / width="25%">
+  <section id="about" class="hidden">
+    <img src="imagen/CarloM.jpeg" alt="Carlo Manuel Cabrera"
+         class="profile-image" width="25%">
     <h2>Sobre mí</h2>
-    <p>Soy un apasionado del desarrollo web con experiencia en JavaScript, Node.js, HTML, CSS y bases de datos.
-    Me encanta crear aplicaciones web interactivas y eficientes. Siempre estoy aprendiendo nuevas tecnologías y mejorando mis habilidades.
-    Actualmente estoy trabajando en proyectos que involucran el uso de APIs REST y desarrollo de aplicaciones web modernas.
-    </p>
+    <p>Soy un apasionado del desarrollo web con experiencia en JavaScript, Node.js, HTML,
+       CSS y bases de datos. Me encanta crear aplicaciones web interactivas y eficientes…</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="hidden">
     <h2>Proyectos</h2>
     <div class="project">
       <h3>MiniChat</h3>
-      <p>Este es un proyecto par fines de practicar lo aprendido en la clase durante todo este tiempo</p>
+      <p>Proyecto de práctica basado en lo aprendido en clase.</p>
     </div>
     <div class="project">
       <h3>Lista de Tareas</h3>
-      <p>App web para administrar tareas, hecha con HTML, CSS</p>
+      <p>App web para administrar tareas, hecha con HTML y CSS.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="hidden">
     <h2>Contacto</h2>
-    <p>Correo: carlomanuelcabrera11@gmail.com</p>
-    <p>Telefono: 809-727-8906</p>
-    <p>GitHub: <a href="https://github.com/carlo" target="_blank">github.com/carlo</a></p>
+    <p>Correo: <a href="mailto:carlomanuelcabrera11@gmail.com">
+       carlomanuelcabrera11@gmail.com</a></p>
+    <p>Teléfono: 809‑727‑8906</p>
+    <p>GitHub: <a href="https://github.com/carlo" target="_blank">
+       github.com/carlo</a></p>
   </section>
 
+  <!-- Redes sociales -->
+  <div class="social-icons">
+    <a href="https://facebook.com"   target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com"    target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com"  target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com"   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
   <footer>
-    <p>&copy; 2025 Carlo Manuel Cabrera</p>
+    <p>&copy; 2025 Carlo Manuel Cabrera</p>
   </footer>
 </body>
 </html>
